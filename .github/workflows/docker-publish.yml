@@ -3,13 +3,14 @@ on:
   workflow_call:
     inputs:
       version:
-        description: 'Version of the image to build and push'
         required: true
+        description: 'Version of the image to build and push'
+
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version of the image to build and push'
         required: true
+        description: 'Version of the image to build and push'
 
 env:
   REGISTRY: ghcr.io
