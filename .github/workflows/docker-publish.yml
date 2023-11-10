@@ -1,15 +1,18 @@
 name: Publish Docker Image (Specific Version)
 on:
   workflow_call:
-    version:
-      required: true
-      description: "Version of the image to build and push"
+    inputs:
+      version:
+        required: true
+        description: "Version of the image to build and push"
+        type: string
 
   workflow_dispatch:
     inputs:
       version:
         required: true
         description: "Version of the image to build and push"
+        type: string
 
 env:
   REGISTRY: ghcr.io
