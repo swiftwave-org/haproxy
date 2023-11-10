@@ -15,3 +15,8 @@ The image is built on top of official docker images and follows same directory s
 
 **References -**
 - [https://github.com/haproxytech/haproxy-docker-debian](https://github.com/haproxytech/haproxy-docker-debian)
+
+**License Info -**
+- The [LICENSE](https://github.com/swiftwave-org/haproxy/blob/main/LICENSE) file only for current repository which holds docker configuration to build customised docker image of HAProxy for SwiftWave. This license is not meant to be for any HAProxy source / Binary or HAProxy Dataplane API source / Binary
+- Official License of HAProxy - GPL 2.0 [haproxy/haproxy@LICENSE](https://github.com/haproxy/haproxy/blob/master/LICENSE)
+- Official License of HAProxy Dataplane API - Apache 2.0 [haproxytech/dataplaneapi@LICENSE](https://github.com/haproxytech/dataplaneapi/blob/master/LICENSE)
