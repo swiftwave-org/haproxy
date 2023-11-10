@@ -4,10 +4,12 @@ The image is built on top of official docker image.
 
 **Image URI Format -**
 
-```
+```bash
 docker pull ghcr.io/swiftwave-org/haproxy:<version>
+```
 
-example - 
+For example - 
+```bash
 docker pull ghcr.io/swiftwave-org/haproxy:2.9
 ```
 
