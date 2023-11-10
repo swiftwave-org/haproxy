@@ -5,7 +5,7 @@ jobs:
   trigger-workflow:
     runs-on: ubuntu-latest
     permissions:
-      actions: read
+      actions: write
       contents: read
       packages: write
 
