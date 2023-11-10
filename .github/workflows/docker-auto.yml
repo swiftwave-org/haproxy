@@ -2,14 +2,11 @@ name: Publish all docker images
 on:
   workflow_dispatch:
 jobs:
-  build:
+  trigger-workflow:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
-jobs:
-  trigger-workflow:
-    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
