@@ -1,6 +1,17 @@
 #### This is a custom haproxy docker image for swiftwave
 
-The image is built on top of official docker images and follows same directory structure.
+The image is built on top of official docker image.
+
+**Image URI Format -**
+
+```
+docker pull ghcr.io/swiftwave-org/haproxy:<version>
+
+example - 
+docker pull ghcr.io/swiftwave-org/haproxy:2.9
+```
+
+> ⚠️ Note : This repo will not contain any `latest` image. So it's mandatory to provide version as tag while pulling the image.
 
 **Added Customization -**
 - Custom haproxy configuration added
