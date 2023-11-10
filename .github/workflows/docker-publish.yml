@@ -5,6 +5,11 @@ on:
       version:
         description: 'Version of the image to build and push'
         required: true
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version of the image to build and push'
+        required: true
 
 env:
   REGISTRY: ghcr.io
