@@ -1,6 +1,8 @@
 #### This is a custom haproxy docker image for swiftwave
 
-The image is built on top of official docker image.
+The image is built on top of [official docker image](https://hub.docker.com/r/haproxytech/haproxy-debian).
+
+---
 
 **Image URI Format -**
 
