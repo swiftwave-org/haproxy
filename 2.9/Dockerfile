@@ -21,9 +21,4 @@ RUN /config-generate.sh
 # Delete config-generate.sh
 RUN rm /config-generate.sh
 
-# Set custom entrypoint
-COPY ./entrypoint.sh /
-RUN chmod +x /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
 CMD ["haproxy", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
