@@ -22,7 +22,7 @@ jobs:
     - name: List folders
       id: list-folders
       run: |
-        echo "::set-output name=folders::$(ls -d */ | sed 's#/##g')"
+        echo "::set-output name=folders::$(ls -d */ | sed 's#/##g') | paste -sd ','"
 
     - name: Trigger Docker Publish Workflow for each folder
       run: |
