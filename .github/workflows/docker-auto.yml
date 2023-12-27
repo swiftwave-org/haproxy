@@ -3,8 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '26 5 * * *'
-  pull_request:
-    branches: [ main ]
   push:
     branches: [ main ]
 jobs:
