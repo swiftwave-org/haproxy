@@ -1,7 +1,8 @@
 name: swiftwave_haproxy_dataplaneapi
 dataplaneapi:
-  host: localhost
-  port: 9999
+  scheme:
+    - unix
+  socket_path: /home/dataplaneapi.sock
   user:
   # dont' change the variables
   # these auto-configure from environment variables
