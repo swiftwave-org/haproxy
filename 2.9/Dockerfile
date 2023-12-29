@@ -21,4 +21,8 @@ RUN /config-generate.sh
 # Delete config-generate.sh
 RUN rm /config-generate.sh
 
+# Copy dataplaneapi.sh
+COPY ./dataplaneapi.sh /
+RUN chmod +x /dataplaneapi.sh
+
 CMD ["haproxy", "-f", "/usr/local/etc/haproxy/haproxy.cfg"]
