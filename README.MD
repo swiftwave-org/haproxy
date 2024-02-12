@@ -9,13 +9,6 @@ The image is built on top of [official docker image](https://hub.docker.com/r/ha
 ```bash
 docker pull ghcr.io/swiftwave-org/haproxy:<version>
 ```
-
-_For Non-TLS backend support_
-
-```bash
-docker pull ghcr.io/swiftwave-org/haproxy:<version>-http
-```
-
 For example - 
 ```bash
 docker pull ghcr.io/swiftwave-org/haproxy:2.9
