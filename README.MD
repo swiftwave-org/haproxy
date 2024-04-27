@@ -25,7 +25,8 @@ docker pull ghcr.io/swiftwave-org/haproxy:2.9
 **Available Environment Variables -**
 - `ADMIN_USER` : username of dataplaneapi (optional)
 - `ADMIN_PASSWORD` : password of dataplaneapi (optional)
-- `SWIFTWAVE_SERVICE_ENDPOINT` : this should be a public http/https endpoint with port of swiftwace which can be accessible by haproxy.
+- `SWIFTWAVE_SERVICE_ENDPOINT` : this should be a public endpoint with port of swiftwace which can be accessible by haproxy.
+- `SWIFTWAVE_SERVICE_ADDRESS` : this should be only the address (it shouldn't have any protocol & port info)
 
 **References -**
 - [https://github.com/haproxytech/haproxy-docker-debian](https://github.com/haproxytech/haproxy-docker-debian)
