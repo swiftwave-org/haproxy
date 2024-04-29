@@ -1,4 +1,4 @@
-FROM haproxytech/haproxy-debian:2.9
+FROM haproxytech/haproxy-debian:3.0
 
 # Set default config
 COPY ./haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
@@ -9,17 +9,6 @@ RUN mkdir -p /etc/haproxy/ssl/
 
 # Copy default SSL certificate. With zero ssl certificates haproxy will not start
 COPY ./default.pem /etc/haproxy/ssl/default.pem
-
-# Create directory for custom pages
-RUN mkdir -p /var/lib/haproxy/pages
-
-# Copy the error pages
-COPY ./502.http /var/lib/haproxy/pages
-COPY ./503.http /var/lib/haproxy/pages
-
-# Fix permission
-RUN chmod -R 777 /var/lib/haproxy/pages
-RUN chown -R haproxy:haproxy /var/lib/haproxy/pages
 
 # COPY ./config-generate.sh
 COPY ./config-generate.sh /
