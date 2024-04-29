@@ -10,6 +10,13 @@ RUN mkdir -p /etc/haproxy/ssl/
 # Copy default SSL certificate. With zero ssl certificates haproxy will not start
 COPY ./default.pem /etc/haproxy/ssl/default.pem
 
+# Create directory for custom pages
+RUN mkdir -p /pages
+RUN chmod -R 777 /pages
+
+# Copy the error pages
+COPY ./502.http /pages
+COPY ./503.http /pages
 
 # COPY ./config-generate.sh
 COPY ./config-generate.sh /
