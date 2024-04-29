@@ -11,14 +11,14 @@ RUN mkdir -p /etc/haproxy/ssl/
 COPY ./default.pem /etc/haproxy/ssl/default.pem
 
 # Create directory for custom pages
-RUN mkdir -p /pages
+RUN mkdir -p /var/lib/haproxy/pages
 
 # Copy the error pages
-COPY ./502.http /pages
-COPY ./503.http /pages
+COPY ./502.http /var/lib/haproxy/pages
+COPY ./503.http /var/lib/haproxy/pages
 
 # Fix permission
-RUN chmod -R 777 /pages
+RUN chmod -R 777 /var/lib/haproxy/pages
 
 # COPY ./config-generate.sh
 COPY ./config-generate.sh /
