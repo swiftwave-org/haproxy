@@ -19,6 +19,7 @@ COPY ./503.http /var/lib/haproxy/pages
 
 # Fix permission
 RUN chmod -R 777 /var/lib/haproxy/pages
+RUN chown -R haproxy:haproxy /var/lib/haproxy/pages
 
 # COPY ./config-generate.sh
 COPY ./config-generate.sh /
