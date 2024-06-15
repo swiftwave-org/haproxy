@@ -1,4 +1,4 @@
-FROM haproxytech/haproxy-debian:3.0
+FROM haproxytech/haproxy-debian:2.9
 
 # Set default config
 COPY ./haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
